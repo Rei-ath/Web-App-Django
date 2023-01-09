@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="static\signin.css" />
+    <title>Login || Sign Up</title>
+</head>
+
+<body>
+
+    <!-- <video autoplay muted loop id="myVideo">
+    <source src="static\bg.mp4" type="video/mp4">
+  </video> -->
+    <div class="container">
+        <div class="sign-up-form">
+            <!-- Left (Form Image) -->
+            <div class="form-image">
+                <img src="static\loginImg.jpg" alt="" />
+            </div>
+            <!-- Right (Form Content) -->
+            <form class="form-content" method="post" action="/signup">
+                {% csrf_token %}
+                <!-- Form Heading -->
+                <div class="form-heading">
+                    <img src="static\logo.png" alt="" />
+                    <h1>Create Account</h1>
+                    <p>Please fill out all the required fields to create your account!</p>
+                </div>
+                <!-- Input Wrap -->
+                <div class="input-wrap">
+                    <div class="input">
+                        <input type="text" id="username" name="username" />
+                        <div class="label">
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" />
+                        <div class="label">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" name="password" />
+                        <div class="label">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="confirmPassword" name="confirmPassword" />
+                        <div class="label">
+                            <label for="confirmPassword">Confirm Password </label>
+                        </div>
+                    </div>
+                    <!-- <div class="btns"> -->
+                    <button type="submit" value="click"> Create Account</button>
+                 {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+                    <!-- <button type="submit">Create Account</button> -->
+                    <!-- </div> -->
+                    <p>Already have an account? <a href="/login">Login instead</a></p>
+   
+                </div>
+        </div>
+    </div>
+    </form>
+
+</body>
+
+</html>

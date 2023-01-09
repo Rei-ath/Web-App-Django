@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>{% block title %}{% endblock title %}</title>
+
+
+    <link rel="icon" href="static\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+
+
+<body>
+    <div class="header">
+        <div class="container">
+
+
+
+            <nav id="navigation-animation">
+                <a href="index.html"><img class="logo" src="static\logo.png" height="30px"></a>
+
+                <ul id="menu-items">
+
+                    <li><a class="anchor-list" href="/home">HOME</a></li>
+                    <li><a class="anchor-list" href="/products">PRODUCTS</a></li>
+                    <li><a class="anchor-list" href="/about">ABOUT</a></li>
+                    <li><a class="anchor-list" href="">CONTACT</a></li>
+                    <li><a class="anchor-list" href="/logout">Logout</a></li>
+
+                </ul>
+            </nav>
+            <a href="">
+                <img class="img-hover" src="static\Cart-logo.png" width="30px" height="30px">
+            </a>
+            <i class="fa fa-bars" id="dropdown" onclick="menutoggle()"></i>
+        </div>
+
+    </div>
+
+
+
+
+{% block body %}
+
+{% endblock body %}
+
+
+    <div class="row-3 row-3-5">
+
+
+        <div class="col-5">
+
+            <img src="https://w7.pngwing.com/pngs/911/623/png-transparent-amazon-com-amazon-alexa-retail-amazon-prime-order-fulfillment-amazon-miscellaneous-company-text.png" alt="">
+        </div>
+
+
+        <div class="col-5">
+            <img src="https://www.freepnglogos.com/uploads/supreme-logo-png/supreme-logo-interesting-art--3.png" margin="30px">
+        </div>
+
+        <div class="col-5">
+            <img src="https://www.carlogos.org/car-logos/lamborghini-logo-1000x1100-show.png" alt="">
+        </div>
+
+
+        <div class="col-5">
+
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/champion-7-logo-png-transparent.png" alt="">
+        </div>
+
+
+
+
+        <div class="col-5">
+            <img src="https://www.freepnglogos.com/uploads/rolex-png-logo/rolex-png-logo-0.png" alt="">
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="row-foot">
+                <div class="foot-col-1">
+
+
+
+                    <h3>Download this</h3>
+                    <p>Download this for ios and android</p>
+                    <img class="row-foot-image-download" src="https://freepngimg.com/save/68650-ipad-play-google-button-iphone-android-now/2000x694" alt="">
+                    <img class="row-foot-image-download" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred_2x.png" alt="">
+
+                </div>
+
+
+
+                <div class="foot-col-2">
+                    <img src="static\logo.png">
+                    <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa doloribus nesciunt nam?</p>
+                </div>
+
+
+                <div class="foot-col-3">
+                    <h3> Usefull links</h3>
+                    <p>
+                        <ul>
+                            <li><a class="usefull-links" href="">Blog posts</a> </li>
+                            <li><a class="usefull-links" href="">Couponos</a> </li>
+                            <li><a class="usefull-links" href="">Return policy</a> </li>
+                            <li><a class="usefull-links" href="">Terms and conditions</a> </li>
+                            <li><a class="usefull-links" href="">Affiliate links</a> </li>
+                        </ul>
+                    </p>
+                </div>
+
+
+                <div class="foot-col-4">
+                    <h3>
+                        </h3class>Follow Us</h3>
+                    <ul>
+                        <li><a href="#" class="social-icon-fb-twitter"><i class="fab fa-facebook-square"> </i>Facebook</li></a>
+                            <li><a href="#" class="social-icon-fb-twitter"><i class="fab fa-twitter-square"> </i>Twitter</li></a>
+                                <li><a href="#" class="social-icon-insta-youtube"><i class="fab fa-instagram"></i> insta</li></a>
+                                    <li><a href="#" class="social-icon-insta-youtube"><i class="fab fa-youtube"></i> Utube</li>
+    </ul>
+
+</div>
+</div>
+</div>
+</footer>
+
+
+
+<script src="static\script.js"></script>
+</body>
+
+</html>
