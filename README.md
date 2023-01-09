@@ -16,3 +16,5 @@ after that fill in the details.
 and after that in order to run the server use following command -
 
 python manage.py runserver
+
+
